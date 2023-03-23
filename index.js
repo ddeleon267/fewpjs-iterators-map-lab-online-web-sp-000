@@ -1,5 +1,5 @@
 const tutorials = [
-  'what does the this keyword mean?',
+  'what does the this keyword mean?', //['what', 'does', 'this']
   'What is the Contutorialuctor OO pattern?',
   'implementing Blockchain Web API',
   'The Test Driven Development Workflow',
@@ -16,7 +16,8 @@ const titleCased = () => {
     let arrayOfStrings = tutorial.split(' ')
     let capitalizedArray = []
     for (let i = 0; i < arrayOfStrings.length; i++) {
-      capitalizedArray.push(arrayOfStrings[i].toUpperCase())
+      console.log(arrayOfStrings[i].toUpperCase())
+      capitalizedArray.push(arrayOfStrings[i])
     }
     capitalizedArray.join(' ')
   })
